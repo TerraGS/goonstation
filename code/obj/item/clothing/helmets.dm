@@ -369,6 +369,27 @@
 			icon_state = "syndie_specialist-bard"
 			item_state = "syndie_specialist-bard"
 
+		ninja
+			name = "specialist ninja helmet"
+			desc = "Placeholder description."
+			icon_state = "syndie_specialist-infiltrator"
+			item_state = "syndie_specialist-infiltrator"
+			c_flags = SPACEWEAR | COVERSEYES | COVERSMOUTH
+			see_face = 0.0
+
+			//setupProperties()
+				//..()
+				//setProperty("space_movespeed", -0.05)
+
+			equipped(var/mob/user, var/slot)
+				..()
+				if (slot == SLOT_HEAD)
+					APPLY_MOB_PROPERTY(user, PROP_THERMALVISION_MK2, src)
+
+			unequipped(var/mob/user, var/slot)
+				..()
+				REMOVE_MOB_PROPERTY(user, PROP_THERMALVISION_MK2, src)
+
 
 /obj/item/clothing/head/helmet/space/ntso //recoloured nuke class suits for ntso vs syndicate specialist
 	name = "NT-SO combat helmet"

@@ -451,6 +451,25 @@
 	magnetic = 1
 	c_flags = NOSLIP
 
+/obj/item/clothing/shoes/ninja
+	name = "ninja shoes"
+	desc = "placeholder description"
+	icon_state = "wizard"
+	c_flags = NOSLIP
+	laces = LACES_NONE
+	step_sound = STEP_PRIORITY_LOW
+
+	setupProperties()
+		. = ..()
+		setProperty("space_movespeed", -0.15)
+	//equipped(mob/user, slot)
+	//	. = ..()
+	//	APPLY_MOVEMENT_MODIFIER(user, /datum/movement_modifier/mech_boots, src.type)
+
+	//unequipped(mob/user)
+	//	. = ..()
+	//	REMOVE_MOVEMENT_MODIFIER(user, /datum/movement_modifier/mech_boots, src.type)
+
 /obj/item/clothing/shoes/fuzzy //not boolean slippers
 	name = "fuzzy slippers"
 	desc = "A pair of cute little pink rabbit slippers."

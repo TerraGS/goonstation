@@ -1218,9 +1218,9 @@
 			body_parts_covered = TORSO|LEGS|ARMS
 			permeability_coefficient = 0.01
 
-		setupProperties()
-			..()
-			setProperty("viralprot", 50)
+			setupProperties()
+				..()
+				setProperty("viralprot", 50)
 
 		infiltrator
 			name = "specialist operative espionage suit"
@@ -1228,9 +1228,9 @@
 			icon_state = "syndie_specialist-infiltrator"
 			item_state = "syndie_specialist-infiltrator"
 
-		setupProperties()
-			..()
-			setProperty("space_movespeed", -0.25)
+			setupProperties()
+				..()
+				setProperty("space_movespeed", -0.25)
 
 
 		firebrand
@@ -1265,6 +1265,19 @@
 			name = "road-worn stage uniform"
 			icon_state = "syndie_specialist-bard"
 			item_state = "syndie_specialist-bard"
+
+		ninja
+			name = "specialist operative exoskeleton"
+			icon_state = "syndie_specialist-infiltrator"
+			item_state = "syndie_specialist-infiltrator"
+
+			body_parts_covered = TORSO|LEGS|ARMS
+
+			setupProperties()
+				..()
+				//setProperty("meleeprot", 3)
+				//setProperty("rangedprot", 1)
+				setProperty("space_movespeed", -0.35)
 
 		unremovable
 			cant_self_remove = 1
