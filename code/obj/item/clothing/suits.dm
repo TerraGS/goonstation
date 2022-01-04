@@ -1268,16 +1268,19 @@
 
 		ninja
 			name = "specialist operative exoskeleton"
-			icon_state = "syndie_specialist-infiltrator"
-			item_state = "syndie_specialist-infiltrator"
+			desc = "A syndicate stealth combat suit that augments mobility."
+			icon_state = "syndie_specialist-ninja"
+			item_state = "syndie_specialist-ninja"
 
 			body_parts_covered = TORSO|LEGS|ARMS
+			cant_self_remove = 1
+			cant_other_remove = 1
 
 			setupProperties()
 				..()
 				//setProperty("meleeprot", 3)
 				//setProperty("rangedprot", 1)
-				setProperty("space_movespeed", -0.35)
+				setProperty("space_movespeed", -0.3)
 
 		unremovable
 			cant_self_remove = 1

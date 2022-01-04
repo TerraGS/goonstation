@@ -452,23 +452,18 @@
 	c_flags = NOSLIP
 
 /obj/item/clothing/shoes/ninja
-	name = "ninja shoes"
-	desc = "placeholder description"
+	name = "stealth footwear"
+	desc = "Specialized footwear for syndicate stealth operatives."
 	icon_state = "wizard"
 	c_flags = NOSLIP
 	laces = LACES_NONE
-	step_sound = STEP_PRIORITY_LOW
+	step_priority = STEP_PRIORITY_LOW
+	cant_self_remove = 1
+	cant_other_remove = 1
 
 	setupProperties()
 		. = ..()
-		setProperty("space_movespeed", -0.15)
-	//equipped(mob/user, slot)
-	//	. = ..()
-	//	APPLY_MOVEMENT_MODIFIER(user, /datum/movement_modifier/mech_boots, src.type)
-
-	//unequipped(mob/user)
-	//	. = ..()
-	//	REMOVE_MOVEMENT_MODIFIER(user, /datum/movement_modifier/mech_boots, src.type)
+		setProperty("space_movespeed", -0.2)
 
 /obj/item/clothing/shoes/fuzzy //not boolean slippers
 	name = "fuzzy slippers"
