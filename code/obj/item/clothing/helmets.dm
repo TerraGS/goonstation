@@ -374,10 +374,8 @@
 			desc = "A cybernetic helmet with thermal vision interface."
 			icon_state = "syndie_specialist-ninja"
 			item_state = "syndie_specialist-ninja"
-			c_flags = SPACEWEAR | COVERSEYES | COVERSMOUTH
-			see_face = 0.0
-			cant_self_remove = 1
-			cant_other_remove = 1
+			/* c_flags = SPACEWEAR | COVERSEYES | COVERSMOUTH
+			see_face = 0.0 */
 
 			//setupProperties()
 				//..()

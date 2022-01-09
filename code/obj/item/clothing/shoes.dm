@@ -458,12 +458,10 @@
 	c_flags = NOSLIP
 	laces = LACES_NONE
 	step_priority = STEP_PRIORITY_LOW
-	cant_self_remove = 1
-	cant_other_remove = 1
 
-	setupProperties()
+	/* setupProperties()
 		. = ..()
-		setProperty("space_movespeed", -0.2)
+		setProperty("space_movespeed", -0.2) */
 
 /obj/item/clothing/shoes/fuzzy //not boolean slippers
 	name = "fuzzy slippers"
