@@ -9,6 +9,13 @@
 		if(!ishuman(user))
 			boutput(user, "<span class='alert'>The scroll won't open!</span>")
 			return
+		var/mob/living/carbon/human/H = user
 		boutput(user, "<span class='notice'>As you open the scroll, knowledge of the ninja arts awakens within you.</span>")
 		// equip items, grant abilities
+		H.drop_from_slot(H.wear_suit)
+		H.drop_from_slot(H.shoes)
+		H.drop_from_slot(H.head)
+		H.equip_new_if_possible(/obj/item/clothing/suit/space/syndicate/specialist/ninja, H.SLOT_WEAR_SUIT)
+		H.equip_new_if_possible(/obj/item/clothing/shoes/ninja, H.SLOT_SHOES)
+		H.equip_new_if_possible(/obj/item/clothing/head/helmet/space/syndicate/specialist/ninja, H.SLOT_HEAD)
 			qdel(src)
