@@ -18,4 +18,5 @@
 		H.equip_new_if_possible(/obj/item/clothing/suit/space/syndicate/specialist/ninja, H.SLOT_WEAR_SUIT)
 		H.equip_new_if_possible(/obj/item/clothing/shoes/ninja, H.SLOT_SHOES)
 		H.equip_new_if_possible(/obj/item/clothing/head/helmet/space/syndicate/specialist/ninja, H.SLOT_HEAD)
-			qdel(src)
+		APPLY_MOVEMENT_MODIFIER(H, /datum/movement_modifiers/ninja, src.type)
+		qdel(src)

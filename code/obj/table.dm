@@ -376,7 +376,7 @@
 
 	Bumped(atom/AM)
 		..()
-		if(!ismonkey(AM))
+		if(!ismonkey(AM) || !AM.get_ability_holder(/datum/abilityHolder/ninja))
 			return
 		var/mob/living/carbon/human/M = AM
 		if(!isalive(M))

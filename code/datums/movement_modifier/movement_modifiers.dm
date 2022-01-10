@@ -224,3 +224,8 @@
 
 /datum/movement_modifier/shiver
 	additive_slowdown = 2
+
+// ninja class modifiers
+/datum/movement_modifier/ninja
+	health_deficiency_adjustment = -50
+	additive_slowdown = -0.5
