@@ -376,9 +376,11 @@
 
 	Bumped(atom/AM)
 		..()
-		if(!ismonkey(AM) || !AM.get_ability_holder(/datum/abilityHolder/ninja))
+		if(!ishuman(AM))
 			return
 		var/mob/living/carbon/human/M = AM
+		if(!HAS_MOB_PROPERTY(M, PROP_JUMP_TABLES))
+			return
 		if(!isalive(M))
 			return
 		actions.start(new /datum/action/bar/icon/railing_jump/table_jump(M, src), M)

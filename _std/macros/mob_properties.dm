@@ -231,6 +231,7 @@ To remove:
 #define PROP_INVISIBILITY(x) x("invisibility", APPLY_MOB_PROPERTY_MAX, REMOVE_MOB_PROPERTY_MAX, PROP_UPDATE_INVISIBILITY)
 #define PROP_PASSIVE_WRESTLE(x) x("wrassler", APPLY_MOB_PROPERTY_SIMPLE, REMOVE_MOB_PROPERTY_SIMPLE)
 #define PROP_CANTTHROW(x) x("cantthrow", APPLY_MOB_PROPERTY_SIMPLE, REMOVE_MOB_PROPERTY_SIMPLE)
+#define PROP_JUMP_TABLES(x) x("jump_table", APPLY_MOB_PROPERTY_SIMPLE, REMOVE_MOB_PROPERTY_SIMPLE)
 
 // In lieu of comments, these are the indexes used for list access in the macros below.
 #define MOB_PROPERTY_ACTIVE_VALUE 1
